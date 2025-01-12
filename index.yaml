@@ -1,0 +1,27 @@
+apiVersion: v1
+entries:
+  asp-net-mvc-server-2w5:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2024-12-20T16:06:00.8352109-05:00"
+    description: A Helm chart for creating a simple ASP.NET server and Docker on my
+      Kubernetes cluster
+    digest: 8fd85c50251c5654f8915de724d41259359c8e4422597e25d744791014e74816
+    name: asp-net-mvc-server-2w5
+    type: application
+    urls:
+    - asp-net-mvc-server-2w5-0.1.0.tgz
+    version: 0.1.0
+  http-static-server-2w5:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2024-12-20T16:06:00.8352524-05:00"
+    description: A Helm chart for creating a simple HTTP static server using Nginx
+      and Docker on my Kubernetes cluster
+    digest: 3616eaa666c3bcfa2a9ff4d31a990903bd196f46b0487ac14e796decb64b2a37
+    name: http-static-server-2w5
+    type: application
+    urls:
+    - http-static-server-2w5-0.1.0.tgz
+    version: 0.1.0
+generated: "2024-12-20T16:06:00.8341514-05:00"
