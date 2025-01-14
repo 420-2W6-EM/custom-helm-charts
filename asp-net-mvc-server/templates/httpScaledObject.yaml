@@ -14,9 +14,8 @@ spec:
     port: 80
   replicas:
     min: 0
-    max: 5
-  targetPendingRequests: 1
-  cooldownPeriod: 300 # 5 minutes (valeur par default, mais ne semble pas être modifiable)  
+    max: 1
+  scaledownPeriod: 60 # 1 minute  
   #scalingMetric:
   #  requestRate:
   #      granularity: 1s
