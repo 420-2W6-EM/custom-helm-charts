@@ -9,7 +9,7 @@ spec:
   tls:
   - hosts:
     - {{ .Values.host }}
-    secretName: tls-secret-{{ .Release.Name }}-kapydata
+    secretName: tls-secret-{{ .Release.Name }}-domain.com
   rules:
   - host: {{ .Values.host }}
     http:

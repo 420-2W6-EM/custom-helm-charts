@@ -2,8 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: {{ .Release.Name }}-deployment
-  annotations:
-    timestamp: {{ now | quote }}
 spec:
   selector:
     matchLabels:
@@ -19,12 +17,9 @@ spec:
         image: {{ .Values.image }}
         ports:
         - containerPort: 80
+        resources:
+          limits:
+            memory: "64Mi"
+            cpu: "50m"
       imagePullSecrets:
-      - name: c8n-registry-secret
-      resources:
-        requests:
-          memory: "64Mi"  # Minimum de mémoire allouée
-          cpu: "50m"      # Minimum de CPU alloué
-        limits:
-          memory: "128Mi"  # Limite de mémoire allouée
-          cpu: "100m"      # Limite de CPU allouée
+      - name: registry-image-auth-secret

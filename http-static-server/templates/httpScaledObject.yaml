@@ -1,0 +1,18 @@
+apiVersion: http.keda.sh/v1alpha1
+kind: HTTPScaledObject
+metadata:
+  name: {{ .Release.Name }}-httpscaledobject
+  namespace: default
+spec:
+  hosts:
+    - {{ .Values.host }}
+  scaleTargetRef:
+    name: {{ .Release.Name }}-deployment
+    kind: Deployment
+    apiVersion: apps/v1
+    service: {{ .Release.Name }}-service
+    port: 80
+  replicas:
+    min: 0
+    max: 1
+  scaledownPeriod: 60

@@ -21,12 +21,9 @@ spec:
         image: {{ .Values.image }}
         ports:
         - containerPort: 8080
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "100m"
       imagePullSecrets:
-      - name: c8n-registry-secret
-      resources:
-        requests:
-          memory: "128Mi"  # Minimum de mémoire allouée
-          cpu: "100m"      # Minimum de CPU alloué
-        limits:
-          memory: "128Mi"  # Limite de mémoire allouée
-          cpu: "100m"      # Limite de CPU allouée
+      - name: registry-image-auth-secret
