@@ -7,7 +7,7 @@ spec:
   hosts:
     - {{ .Values.host }}
   scaleTargetRef:
-    deployment: {{ .Release.Name }}-deployment
+    name: {{ .Release.Name }}-deployment
     kind: Deployment
     apiVersion: apps/v1
     service: {{ .Release.Name }}-service
@@ -15,9 +15,4 @@ spec:
   replicas:
     min: 0
     max: 1
-  scaledownPeriod: 60 # 1 minute  
-  #scalingMetric:
-  #  requestRate:
-  #      granularity: 1s
-  #      targetValue: 5
-  #      window: 1m
+  scaledownPeriod: 60
