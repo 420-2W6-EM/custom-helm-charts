@@ -1,0 +1,15 @@
+apiVersion: cert-manager.io/v1
+kind: Issuer #ClusterIssuer avant... mais ne marche pas :(
+metadata:
+  name: letsencrypt-prod
+  namespace: student-{{ .Values.studentNumber }}-private-ns
+spec:
+  acme:
+    server: https://acme-v02.api.letsencrypt.org/directory
+    email: info@4202w6.com
+    privateKeySecretRef:
+      name: letsencrypt-prod
+    solvers:
+    - http01:
+        ingress:
+          ingressClassName: nginx

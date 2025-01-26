@@ -1,0 +1,20 @@
+# Nom de l'image à récupérer du registre d'image.
+# Le nom de l'image doit être cohérant avec la branche de l'application.
+# Exemples : 
+#   c8n.io/kevin-leduc/NOM_DU_DEPOT_GIT:latest
+#   c8n.io/kevin-leduc/NOM_DU_DEPOT_GIT:hotfix-1.0.0
+#   c8n.io/kevin-leduc/NOM_DU_DEPOT_GIT:release-1.0.0
+#   c8n.io/kevin-leduc/NOM_DU_DEPOT_GIT:develop
+#   c8n.io/kevin-leduc/NOM_DU_DEPOT_GIT:feature-add-user-profile
+image: "" # obligatoire
+
+# URL pour accéder à l'application.
+# Le nom de domaine principal ne peut pas être changé (kapydata.com), uniquement le sous-domaine.
+# Le nom de l'URL doit être cohérant avec la branche de l'application.
+# Exemples : 
+#   mon-app.kapydata.com
+#   mon-app-hotfix.kapydata.com
+#   mon-app-release.kapydata.com
+#   mon-app-develop.kapydata.com
+#   mon-app-feature-add-user-profile.kapydata.com
+host: "" # obligatoire

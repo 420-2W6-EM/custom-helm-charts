@@ -1,0 +1,9 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  namespace: student-{{ .Values.studentNumber }}-private-ns
+  name: student-{{ .Values.studentNumber }}-role
+rules:
+- apiGroups: [""]
+  resources: ["pods", "secrets", "deployments", "services", "ingress", "HTTPScaledObject"]
+  verbs: ["get", "list", "watch", "create", "delete", "update", "patch"]

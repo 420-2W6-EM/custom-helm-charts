@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: keda-add-ons-http-interceptor-proxy-external
+  namespace: student-{{ .Values.studentNumber }}-private-ns  # Le namespace où vous souhaitez accéder au proxy
+spec:
+  type: ExternalName
+  externalName: keda-add-ons-http-interceptor-proxy.keda.svc.cluster.local  # Nom DNS complet du service dans son namespace d'origine

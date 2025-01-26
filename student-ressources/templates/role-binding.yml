@@ -1,0 +1,13 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: student-{{ .Values.studentNumber }}-role-binding
+  namespace: student-{{ .Values.studentNumber }}-private-ns
+subjects:
+- kind: ServiceAccount
+  name: student-{{ .Values.studentNumber }}-service-account
+  namespace: student-${{ .Values.studentNumber }}-private-ns
+roleRef:
+  kind: Role
+  name: student-{{ .Values.studentNumber }}-role
+  apiGroup: rbac.authorization.k8s.io
