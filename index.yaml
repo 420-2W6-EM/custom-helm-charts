@@ -2,8 +2,19 @@ apiVersion: v1
 entries:
   asp-net-mvc-server-2w5:
   - apiVersion: v2
+    appVersion: 1.0.8
+    created: "2025-01-28T08:48:13.5204089-05:00"
+    description: A Helm chart for creating a simple ASP.NET server and Docker on my
+      Kubernetes cluster
+    digest: 6fadcd68da84c43bd15cc1a28b74f45f7d8bbc20be7a03988cd81f87e8f84981
+    name: asp-net-mvc-server-2w5
+    type: application
+    urls:
+    - asp-net-mvc-server-2w5-1.0.8.tgz
+    version: 1.0.8
+  - apiVersion: v2
     appVersion: 1.0.7
-    created: "2025-01-28T08:45:39.8325708-05:00"
+    created: "2025-01-28T08:48:13.5173357-05:00"
     description: A Helm chart for creating a simple ASP.NET server and Docker on my
       Kubernetes cluster
     digest: 7661376515f1b197c166a3d2c1050dce5d48bab9ea010da8ed8299e63f605329
@@ -14,7 +25,7 @@ entries:
     version: 1.0.7
   - apiVersion: v2
     appVersion: 1.0.6
-    created: "2025-01-28T08:45:39.8296198-05:00"
+    created: "2025-01-28T08:48:13.5142503-05:00"
     description: A Helm chart for creating a simple ASP.NET server and Docker on my
       Kubernetes cluster
     digest: d1dc5e3e5db678c048249f172d6f4040fd11d7b9d0803bd4ebd11c0f58ad1b4b
@@ -25,7 +36,7 @@ entries:
     version: 1.0.6
   - apiVersion: v2
     appVersion: 1.0.5
-    created: "2025-01-28T08:45:39.8268196-05:00"
+    created: "2025-01-28T08:48:13.5112312-05:00"
     description: A Helm chart for creating a simple ASP.NET server and Docker on my
       Kubernetes cluster
     digest: afeaffe4f2304421fad383405d66c888eb5248dc1f4e10c5eb76145f48dd13c5
@@ -36,7 +47,7 @@ entries:
     version: 1.0.5
   - apiVersion: v2
     appVersion: 1.0.4
-    created: "2025-01-28T08:45:39.8238953-05:00"
+    created: "2025-01-28T08:48:13.5084018-05:00"
     description: A Helm chart for creating a simple ASP.NET server and Docker on my
       Kubernetes cluster
     digest: 4f7ba3ca33246dc6708f29dda0ed5ab7699bb0e54314d6d9041a6f3f54af95e1
@@ -47,7 +58,7 @@ entries:
     version: 1.0.4
   - apiVersion: v2
     appVersion: 1.0.3
-    created: "2025-01-28T08:45:39.8208889-05:00"
+    created: "2025-01-28T08:48:13.5055514-05:00"
     description: A Helm chart for creating a simple ASP.NET server and Docker on my
       Kubernetes cluster
     digest: 4264107a411a4ea82122980751bda9726aa7f10a7618a465f32c81dc94d08a0a
@@ -58,7 +69,7 @@ entries:
     version: 1.0.3
   - apiVersion: v2
     appVersion: 1.0.2
-    created: "2025-01-28T08:45:39.8173693-05:00"
+    created: "2025-01-28T08:48:13.5026591-05:00"
     description: A Helm chart for creating a simple ASP.NET server and Docker on my
       Kubernetes cluster
     digest: d3edb55298bf106669ca3c3a075fd70f31f3ad268686ac91e564423fb06e5996
@@ -69,7 +80,7 @@ entries:
     version: 1.0.2
   - apiVersion: v2
     appVersion: 1.0.1
-    created: "2025-01-28T08:45:39.8144833-05:00"
+    created: "2025-01-28T08:48:13.4997944-05:00"
     description: A Helm chart for creating a simple ASP.NET server and Docker on my
       Kubernetes cluster
     digest: e21eb6e4290940f6dcab61795dc87e0ea0494f836bc608cdae9df3e7d8f7eb42
@@ -80,7 +91,7 @@ entries:
     version: 1.0.1
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-01-28T08:45:39.8115996-05:00"
+    created: "2025-01-28T08:48:13.4966766-05:00"
     description: A Helm chart for creating a simple ASP.NET server and Docker on my
       Kubernetes cluster
     digest: 8fd85c50251c5654f8915de724d41259359c8e4422597e25d744791014e74816
@@ -92,7 +103,7 @@ entries:
   http-static-server-2w5:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-01-28T08:45:39.8355847-05:00"
+    created: "2025-01-28T08:48:13.5232587-05:00"
     description: A Helm chart for creating a simple HTTP static server using Nginx
       and Docker on my Kubernetes cluster
     digest: 3616eaa666c3bcfa2a9ff4d31a990903bd196f46b0487ac14e796decb64b2a37
@@ -103,8 +114,18 @@ entries:
     version: 0.1.0
   http-static-server-2w6:
   - apiVersion: v2
+    appVersion: 1.16.2
+    created: "2025-01-28T08:48:13.5329589-05:00"
+    description: A Helm chart for Kubernetes
+    digest: 360c1f51f99a483ca6f4a05504bbd56d1e9e66f2d8b7c87e250bd10c06d74303
+    name: http-static-server-2w6
+    type: application
+    urls:
+    - http-static-server-2w6-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
     appVersion: 1.16.1
-    created: "2025-01-28T08:45:39.8424457-05:00"
+    created: "2025-01-28T08:48:13.5298888-05:00"
     description: A Helm chart for Kubernetes
     digest: 6be6bc3d700a472e1320289dbd354b1529a3297a8f385e7275e735ae9897cade
     name: http-static-server-2w6
@@ -114,7 +135,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-01-28T08:45:39.8389464-05:00"
+    created: "2025-01-28T08:48:13.5263337-05:00"
     description: A Helm chart for Kubernetes
     digest: 1ac11f9cb9216db98f2f59415a81b3bc5bd952b08aa5ef27d107585b09a62ce2
     name: http-static-server-2w6
@@ -122,4 +143,4 @@ entries:
     urls:
     - http-static-server-2w6-0.1.0.tgz
     version: 0.1.0
-generated: "2025-01-28T08:45:39.8079814-05:00"
+generated: "2025-01-28T08:48:13.4932154-05:00"

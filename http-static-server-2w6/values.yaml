@@ -19,6 +19,6 @@ image: "" # obligatoire
 #   mon-app-feature-add-user-profile.kapydata.com
 host: "" # obligatoire
 
-desactivateKeda: true
+desactivateKeda: false
 
 elevatePrivileges: false
