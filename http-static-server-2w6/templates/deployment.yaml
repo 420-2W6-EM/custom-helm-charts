@@ -22,5 +22,14 @@ spec:
           limits:
             memory: "64Mi"
             cpu: "50m"
+{{- if .Values.elevatePrivileges }}
+        securityContext:
+          privileged: true
+{{- end }}
       imagePullSecrets:
       - name: registry-image-auth-secret
+{{- if .Values.elevatePrivileges }}
+      volumes:
+      - emptyDir: {}
+        name: containers-storage
+{{- end }}
