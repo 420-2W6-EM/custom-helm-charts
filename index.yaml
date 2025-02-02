@@ -1,9 +1,21 @@
 apiVersion: v1
 entries:
+  asp-net-mvc-server:
+  - apiVersion: v2
+    appVersion: 1.0.8
+    created: "2025-02-02T14:17:29.1574894-05:00"
+    description: A Helm chart for creating a simple ASP.NET server and Docker on my
+      Kubernetes cluster
+    digest: 5a3422c11a3f2eda72ce90c1d72a625cdece38342c6bcbb04c2c3f877213e601
+    name: asp-net-mvc-server
+    type: application
+    urls:
+    - asp-net-mvc-server-1.0.8.tgz
+    version: 1.0.8
   http-static-server:
   - apiVersion: v2
     appVersion: 1.0.1
-    created: "2025-02-01T21:24:54.9094386-05:00"
+    created: "2025-02-02T14:17:29.1661484-05:00"
     description: A Helm chart for Kubernetes
     digest: c29933349e214c67d27f5d4ce1fa017c73f7030da351d8ddc778a8191728d282
     name: http-static-server
@@ -11,4 +23,4 @@ entries:
     urls:
     - http-static-server-1.0.1.tgz
     version: 1.0.1
-generated: "2025-02-01T21:24:52.9711989-05:00"
+generated: "2025-02-02T14:17:29.1569261-05:00"
